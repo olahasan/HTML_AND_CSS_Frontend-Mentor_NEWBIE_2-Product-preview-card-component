@@ -1,139 +1,145 @@
-
 :root {
-    --Dark-cyan-color:hsl(158, 36%, 37%);
-    --Cream-color:hsl(30, 38%, 92%);
-    --Very-dark-blue-color:hsl(212, 21%, 14%);
-    --Dark-grayish-blue-color:hsl(228, 12%, 48%);
-    --white-color:hsl(0, 0%, 100%);
-  }
+  --Dark-cyan-color: hsl(158, 36%, 37%);
+  --Cream-color: hsl(30, 38%, 92%);
+  --Very-dark-blue-color: hsl(212, 21%, 14%);
+  --Dark-grayish-blue-color: hsl(228, 12%, 48%);
+  --white-color: hsl(0, 0%, 100%);
+}
 
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  body {
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Fraunces', serif;
-    background-color: var(--Cream-color);
-    margin: 0;
-    padding: 0;
-  }
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Fraunces", serif;
+  background-color: var(--Cream-color);
+  margin: 0;
+  padding: 0;
+}
 
-  .container {
-    background-color: var(--white-color);
-    margin: 100px auto;
-    width: 600px;
-    display: flex;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+.container {
+  background-color: var(--white-color);
+  margin: 100px auto;
+  width: 600px;
+  display: flex;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  overflow: hidden;
 }
 
 .container .image {
-    width: 50%;
-    background-image: url(../images/image-product-desktop.jpg);
-    background-size: cover;
-    border-radius: 10px 0 0 10px;
-    -webkit-border-radius: 10px 0 0 10px;
-    -moz-border-radius: 10px 0 0 10px;
-    -ms-border-radius: 10px 0 0 10px;
-    -o-border-radius: 10px 0 0 10px;
+  width: 50%;
+  background-image: url(../images/image-product-desktop.jpg);
+  background-size: cover;
+  border-radius: 10px 0 0 10px;
+  -webkit-border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+  -ms-border-radius: 10px 0 0 10px;
+  -o-border-radius: 10px 0 0 10px;
+  transition: transform 0.3s;
+}
+.container .image:hover {
+  transform: scale(1.1, 1.1);
 }
 .container .image img {
-    min-height: 100%;
-    max-width: 100%;
-    border-radius: 10px 0 0 10px;
-    -webkit-border-radius: 10px 0 0 10px;
-    -moz-border-radius: 10px 0 0 10px;
-    -ms-border-radius: 10px 0 0 10px;
-    -o-border-radius: 10px 0 0 10px;
+  min-height: 100%;
+  max-width: 100%;
+  border-radius: 10px 0 0 10px;
+  -webkit-border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+  -ms-border-radius: 10px 0 0 10px;
+  -o-border-radius: 10px 0 0 10px;
 }
-
 
 .container .text {
-    flex-basis: 50%;
-    padding: 30px 30px 0;
+  flex-basis: 50%;
+  padding: 30px 30px 0;
 }
 .container .text p:first-child {
-    font-weight: normal;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 15px;
-    color:var(--Dark-grayish-blue-color);
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 15px;
+  color: var(--Dark-grayish-blue-color);
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
 }
 
 .container .text h2 {
-    font-size: 35px;
-    width: 90%;
-    margin-top: 5px;
-    line-height: 1;
+  font-size: 35px;
+  width: 90%;
+  margin-top: 5px;
+  line-height: 1;
 }
 
-.container .text p:last-of-type{
-    font-family: 'Montserrat', sans-serif;
-    color: var(--Dark-grayish-blue-color);
-    font-size: 15px;
-    margin-bottom: 25px;
-    line-height: 1.6;
+.container .text p:last-of-type {
+  font-family: "Montserrat", sans-serif;
+  color: var(--Dark-grayish-blue-color);
+  font-size: 15px;
+  margin-bottom: 25px;
+  line-height: 1.6;
 }
 
 .container .text span {
-    display: block;
-    margin: 3px 0;
+  display: block;
+  margin: 3px 0;
 }
 .container .text span {
-    color:var(--Dark-cyan-color);
-    font-size: 30px;
+  color: var(--Dark-cyan-color);
+  font-size: 30px;
 }
-.container .text span del{
-    font-size: 14px;
-    position: relative;
-    bottom: 5px;
-    color: var(--Dark-grayish-blue-color);
-    margin-left: 22px;
+.container .text span del {
+  font-size: 14px;
+  position: relative;
+  bottom: 5px;
+  color: var(--Dark-grayish-blue-color);
+  margin-left: 22px;
 }
 .container .text button {
-    cursor: pointer;
-    border: none;
-    background-color:var(--Dark-cyan-color);
-    width: 95%;
-    margin: 20px auto 20px 0;
-    padding: 14px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--Dark-cyan-color);
+  width: 95%;
+  margin: 20px auto 20px 0;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 15px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.container .text button:hover {
+  background-color: hsl(158deg 48.37% 29.78%);
+}
+.container .text button img {
+  margin-right: 6px;
+  position: relative;
+  bottom: -2px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 400px;
     border-radius: 10px;
-    font-size: 15px;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-}
-.container .text button img {
-    margin-right: 6px;
-    position: relative;
-    bottom: -2px;
-}
-
-@media(max-width:768px){
-    .container {
-       flex-direction: column;
-       width: 400px;
-       border-radius: 10px ;
-       -webkit-border-radius: 10px ;
-       -moz-border-radius: 10px ;
-       -ms-border-radius: 10px ;
-       -o-border-radius: 10px ;
-}
-.container .image {
+  }
+  .container .image {
     background-image: url(../images/image-product-mobile.jpg);
     width: 100%;
     height: 280px;
     border-radius: 10px 10px 0 0;
-}
+  }
 }
